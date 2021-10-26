@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: linear-gradient(#6dc4ff, rgb(86, 159, 255));
+  min-height: 100vh;
+}
+main {
+  min-height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#wrapper,
+#buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  border: 3px white solid;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn i {
+  color: #fff;
+  margin-right: 1rem;
+  pointer-events: none;
+  cursor: pointer;
+}
