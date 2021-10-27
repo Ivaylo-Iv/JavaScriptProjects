@@ -85,4 +85,81 @@ main {
   width: 10rem;
   text-align: center;
 }
+
+@media screen and (max-width: 1196px) {
+  #title {
+    font-size: 6rem;
+  }
+  .btn {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  #wrapper h3,
+  #wrapper span {
+    font-size: 5rem;
+  }
+  #wrapper {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  #title {
+    font-size: 5rem;
+  }
+  .btn {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  #wrapper h3,
+  #wrapper span {
+    font-size: 4rem;
+  }
+  #wrapper {
+    margin-top: 2rem;
+  }
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  #title {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  #wrapper h3,
+  #wrapper span {
+    font-size: 3rem;
+  }
+  #wrapper {
+    margin-top: 2rem;
+  }
+  main {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #title {
+    font-size: 2.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  #wrapper h3,
+  #wrapper span {
+    font-size: 3rem;
+  }
+  #wrapper {
+    margin-top: 1.5rem;
+  }
+  main {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
