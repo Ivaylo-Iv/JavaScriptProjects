@@ -9,13 +9,25 @@ html {
   background: linear-gradient(#6dc4ff, rgb(86, 159, 255));
   min-height: 100vh;
 }
-main {
+body {
   min-height: 100vh;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50%;
-  margin: 0 auto;
+  height: 50%;
+
   color: #fff;
 }
 
+#title {
+  text-align: center;
+  font-size: 8rem;
+  font-family: sans-serif;
+}
 #wrapper,
 #buttons {
   display: flex;
@@ -23,7 +35,21 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+
+#wrapper {
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#wrapper h3,
+#wrapper span {
+  font-size: 6rem;
+  font-family: sans-serif;
+}
+
 .btn {
+  margin-top: 5rem;
   border: 3px white solid;
   border-radius: 12px;
   text-decoration: none;
@@ -31,6 +57,7 @@ main {
   padding: 0.5rem 2rem;
   cursor: pointer;
   color: #fff;
+  font-size: 4rem;
 }
 
 .btn i {
