@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="head">
+      <nav>
+        <div id="title">Weather app</div>
+        <div id="date"><i class="fas fa-cloud-sun"></i></div>
+        <div class="searchbar">
+          <div class="inputWrapper">
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Search a city"
+            />
+            <div id="searchIco"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="body">
+      <div class="mainWrapper">
+        <div class="saved">
+          <h2 class="text">Nothing to display here...</h2>
+          <p class="sub-t">Save some cities to view them later</p>
+        </div>
+        <div id="current-search">
+          <h2 class="text">Nothing to display here...</h2>
+          <p class="sub-t">
+            Search a region to view the weather details or click on the saved
+            regions on the side.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer id="end">
+      <div class="fooWrapper">
+        <button id="saveRegion">Save region</button>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
