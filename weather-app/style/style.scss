@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(67, 202, 255), rgb(0, 33, 180));
+}
+svg,
+i {
+  pointer-events: none;
+}
+header {
+  padding: 2rem;
+  max-height: 20vh !important;
+}
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: white;
+}
+
+#title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+#date i {
+  font-size: 4rem;
+}
+
+.searchbar {
+  margin-left: auto;
+  align-self: center;
+}
+
+.inputWrapper {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  backdrop-filter: blur(5px);
+  padding: 0 3rem;
+}
+
+.inputWrapper i {
+  font-size: 2rem;
+  self-align: center;
+}
+
+#searchIco {
+  cursor: pointer;
+  display: inline-block;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.925);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  border: none;
+  width: 40rem;
+  background: transparent;
+  min-height: 4rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+main {
+  padding: 0 2rem;
+  min-height: 60vh !important;
+}
+
+.mainWrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.saved,
+#current-search {
+  height: 50rem;
+
+  // clear: both;
+  background: black;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  backdrop-filter: blur(5px);
+  padding: 0 3rem;
+}
+
+.saved {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+#current-search {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 3rem;
+}
+.sub-t {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  padding: 2rem;
+  min-height: 10vh;
+}
+.fooWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+#saveRegion {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 2rem;
+  background: rgb(16, 37, 65);
+  cursor: pointer;
+}
+
+#saveRegion:active {
+  background: rgb(22, 51, 88);
+}
+
+.current-desc {
+  padding: 0 3rem;
+  font-size: 2rem;
+  margin-top: auto;
+}
+
+.current-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: auto;
+  margin-top: 3rem;
+}
+
+.img-temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img-temp > h1 {
+  font-size: 4rem;
+}
+
+#city {
+  margin: 0 auto;
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.current-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  padding: 0 3rem;
+  justify-content: space-between;
+  // margin-top: ;
+  margin-bottom: 3rem;
+}
+.text-i {
+  margin-left: 0.5rem;
+}
+.wind-speed {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+.temp > h3 {
+  margin-right: 2rem;
+}
+#temp-max {
+  margin-left: 2rem;
+}
+#airH {
+  font-size: 3rem;
+}
+
+.saved-el {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(rgba(7, 159, 219, 0.5), rgba(0, 57, 131, 0.5)),
+    url("../img/sky.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10%;
+  max-height: 10% !important;
+  cursor: pointer;
+}
+
+.saved-el > div {
+  pointer-events: none;
+}
+.img-temp-saved {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.img-temp-saved > img {
+  width: 80px;
+  height: auto;
+}
+#city-saved {
+  font-size: 2rem;
+  margin-left: auto;
+  color: white;
+  margin-right: 2rem;
+}
+#remove-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 0 0 1rem;
+  cursor: pointer;
+  background: rgb(55, 175, 255);
+  color: rgb(250, 248, 248);
+}
