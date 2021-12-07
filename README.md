@@ -2,6 +2,5 @@
 
 Some coole JS projects
 
-1. JS StopWatch
-2. JS Weather App
-   [Link text Here](https://link-url-here.org)
+1. [JS StopWatch](https://github.com/Ivaylo-Iv/JavaScriptProjects/tree/main/JS%20StopWatch)
+2. [JS Weather App](https://github.com/Ivaylo-Iv/JavaScriptProjects/tree/main/weather-app)
